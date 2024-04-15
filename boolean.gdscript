@@ -1,0 +1,10 @@
+extends Node2D
+class_name player
+
+var can_attack: bool = false
+
+func _ready() -> void:
+	if can_attack == true:
+		print("can attack")
+	else:	
+		print("cannot attack")
