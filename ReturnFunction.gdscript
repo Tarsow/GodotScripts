@@ -1,0 +1,22 @@
+extends Node2D
+class_name player
+
+var can_attack: bool = true
+
+var enemy_health: int = 3
+var damage: int = 2
+
+func _ready() -> void:
+	if can_attack == true:
+		var result = killed_enemy()
+		print(result)
+	else:	
+		print("cannot attack")
+		
+func killed_enemy() -> String:
+	if enemy_health < damage:
+		return "enemy killed"
+	else:
+		return "enemy not killed"			
+
+# output: "enemy not killed"
