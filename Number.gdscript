@@ -1,0 +1,17 @@
+extends Node2D
+class_name player
+
+
+# float numbers
+var float_a = 1.532
+var float_b = 2.34
+
+# integer (int) numbers
+var int_a = 2
+var int_b = 1
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(float_a + float_b)
+	print(int_a - int_b)
