@@ -1,0 +1,18 @@
+extends Node2D
+class_name player
+
+var enemy_health = 4
+
+var base_attack = 4
+var bonus_attack = 1
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	if base_attack + bonus_attack >= enemy_health:
+		print("enemy got killed")
+	elif base_attack + bonus_attack >= enemy_health/2:
+		print("enemy almost got killed")
+	else:
+		print("enemy survived")		
+
+# output: enemy got killed
