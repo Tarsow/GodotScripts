@@ -1,0 +1,10 @@
+extends Node2D
+class_name player
+
+var hello = "Hello!"
+var player_name = "Tarsow"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(hello + " " + player_name)
+	print(hello, " ", player_name)
