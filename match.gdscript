@@ -1,0 +1,19 @@
+extends Node2D
+class_name player
+
+var damage: int = 2
+
+func _ready() -> void:
+	match damage:
+		0:
+			print("enemy took 0 damage")
+		1:
+			print("enemy took 1 damage")
+		2:
+			print("enemy took 2 damage")
+		3:
+			print("enemy took 3 damage")	
+		_:
+			print("unknown damage")
+
+# output: "enemy took 2 damage"
