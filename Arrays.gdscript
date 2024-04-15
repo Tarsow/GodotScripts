@@ -1,0 +1,34 @@
+extends Node2D
+class_name player
+
+var list: Array = ["apple","banana","juice",["green", 3, 0.2, "yes"]]
+
+func _ready() -> void:
+	print(list[0]) # output: apple
+	
+	for i in list: # output: apple, banana, juice, ["green", 3, 0.2, "yes"]
+		print(i)
+		
+	for i in list:
+		for information in i:
+			print(information)	#output:
+#a
+#p
+#p
+#l
+#e
+#b
+#a
+#n
+#a
+#n
+#a
+#j
+#u
+#i
+#c
+#e
+#green
+#3
+#0.2
+#yes
