@@ -1,0 +1,12 @@
+extends Node2D
+class_name player
+
+var i: int = 0
+
+func _ready():
+	while i < 100:
+		i += 1
+		print(i)
+		print("while finalized")
+
+# script will be stopped until the loop is finished
